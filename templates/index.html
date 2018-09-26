@@ -1,0 +1,104 @@
+<html>
+
+<head>
+<title>Friends Me</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+<!--     <script type = "text/javascript">
+        $(function(){
+            var submit_form = function(e) {
+                $.getJSON($SCRIPT_ROOT + '/predict', {
+                    t : $('input[name="user_input"]').val()
+                }, function(data) {
+                    $('#result').text(data.result);
+                      });
+                    return false;
+                };
+            
+        $('a#predict').bind('click',submit_form);
+        })
+    </script> -->
+    
+    
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class= "col-md-6">
+            <h1> Friends Me! </h1>
+<!--             <a id="predict">predict</a> -->
+            <form action="/predict" method="POST">
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Enter Your Phrase Below</label>
+                <input class="form-control form-control-lg" type="text" name="user_input" placeholder="Insert Phrase">
+              </div>
+                <button type="submit" class="btn btn-outline-success">Friend Me!</button>
+               
+                
+                 <!-- Button trigger modal -->
+<!--                 <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
+                  Friend Me! Modal
+                </button> -->
+              
+                <!-- Modal -->
+<!--                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Which Friend?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                          
+                      </div>
+                        
+                      <div class="modal-body">
+                      
+                          
+                          <h1>Character: {{name}}</h1>
+            
+                            {% if name == 'Phoebe' %}
+                                <img src="http://33.media.tumblr.com/3f8c405bf1ce874eb06b6e9e39631325/tumblr_nkvsuuCvXJ1qeysf2o2_250.gif"/>
+                            {% elif name == 'Ross' %}
+                                <img src="https://metrouk2.files.wordpress.com/2015/08/ross.gif"/>
+                            {% elif name == 'Rachel' %}
+                                <img src="https://www.vanidad.es/wp-content/uploads/2016/09/vanidad.es_planes-tutiplen-fin-semana-top-friends-yay.gif"/>
+                            {% elif name == 'Joey' %}
+                                <img src="https://media0.giphy.com/media/q48v3Gr5m9Jp6/giphy.gif"/>
+                            {% elif name == 'Chandler' %}
+                                <img src="https://media.tenor.com/images/3e145505e310e35f325cd77d96ab51c4/tenor.gif"/>
+                            {% elif name == 'Monica' %}
+                                <img src="https://media.giphy.com/media/HGEiJZcovtb1e/giphy.gif"/>
+
+                            {% else %}
+                                <p> Not a Friend </p>
+                                <img src="https://i.amz.mshcdn.com/7u0RX9vA2axV5Io3HUgR91M1oGc=/fit-in/1200x9600/http%3A%2F%2Fmashable.com%2Fwp-content%2Fuploads%2F2013%2F06%2FSnape.gif"/>
+
+                            {% endif %} 
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Try Again!</button>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+            
+            
+            </form>
+            
+        </div>
+    </div>
+    </div>
+    
+    </body>
+</html>

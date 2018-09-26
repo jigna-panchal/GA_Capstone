@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<title>Predicition</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body bgcolor="blue">
+
+<div class="container">
+    <div class="row">
+        <div class= "col-md-6">
+            <h1><p class="text-primary">Friends Me!</p></h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+            <h1><p class="text-success"><p class="text-center">Character: {{name}}</p></h1>
+            
+            {% if name == 'Phoebe' %}
+                <img src="http://33.media.tumblr.com/3f8c405bf1ce874eb06b6e9e39631325/tumblr_nkvsuuCvXJ1qeysf2o2_250.gif" class="rounded mx-auto d-block"/>
+            {% elif name == 'Ross' %}
+                <img src="https://metrouk2.files.wordpress.com/2015/08/ross.gif" class="rounded mx-auto d-block"/>
+            {% elif name == 'Rachel' %}
+                <img src="https://www.vanidad.es/wp-content/uploads/2016/09/vanidad.es_planes-tutiplen-fin-semana-top-friends-yay.gif" class="rounded mx-auto d-block"/>
+            {% elif name == 'Joey' %}
+                <img src="https://media0.giphy.com/media/q48v3Gr5m9Jp6/giphy.gif" class="rounded mx-auto d-block"/>
+            {% elif name == 'Chandler' %}
+                <img src="https://media.tenor.com/images/3e145505e310e35f325cd77d96ab51c4/tenor.gif" class="rounded mx-auto d-block"/>
+            {% elif name == 'Monica' %}
+                <img src="https://media.giphy.com/media/HGEiJZcovtb1e/giphy.gif" class="rounded mx-auto d-block"/>
+            {% else %}
+                <img src="https://i.amz.mshcdn.com/7u0RX9vA2axV5Io3HUgR91M1oGc=/fit-in/1200x9600/http%3A%2F%2Fmashable.com%2Fwp-content%2Fuploads%2F2013%2F06%2FSnape.gif" class="rounded mx-auto d-block"/>
+
+            {% endif %}
+        
+        
+        
+        </div>
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+
+
+</div>
+
+
+</body>
+</html>
